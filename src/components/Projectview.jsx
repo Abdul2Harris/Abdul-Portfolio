@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
 
-export const ProjectCard = ({ title, para, tech, img }) => {
+export const ProjectCard = ({ title, para, tech, img, href }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: "-120px" });
 
@@ -32,7 +32,7 @@ export const ProjectCard = ({ title, para, tech, img }) => {
             <a className="text-foreground/80 hover:text-primary cursor-pointer">
               <ExternalLink size={20} />
             </a>
-            <a className="text-foreground/80 hover:text-primary cursor-pointer">
+            <a className="text-foreground/80 hover:text-primary cursor-pointer" href={href}>
               <Github size={20} />
             </a>
           </div>

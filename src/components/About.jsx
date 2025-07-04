@@ -9,7 +9,7 @@ export const About = () => {
     },
     {
       title: "Competitive Programming",
-      para: "I specialize in solving complex algorithmic problems, Solved more than 200 problems on Geeksforgeeks.",
+      para: "I specialize in solving complex algorithmic problems, Solved more than 300 problems on Geeksforgeeks.",
       icon: <User />,
     },
     {

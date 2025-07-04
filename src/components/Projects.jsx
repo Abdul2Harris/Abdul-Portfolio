@@ -3,26 +3,30 @@ import img2 from "./images/simon.webp";
 import img3 from "./images/DCRM.png"
 
 import { ProjectCard } from "./Projectview";
+import { href } from "react-router-dom";
 
 export const Projects = () => {
   const projectCardData = [
     {
       title: "Personal Portfolio Website",
       para: "Engineered a fully revamped, feature-rich portfolio website that seamlessly showcases my previous experiences, and honors-marking a significant solution in my professional full-stack development journey.",
-      tech: ["React", "TailwindCSS", "FramerMotion"],
+      tech: ["React", "Express", "Full Stack"],
       img: img1,
+      href: 'https://github.com/Abdul2Harris/Abdul-Portfolio/tree/main'
     },
     {
       title: "The Simon Game",
       para: "Crafted a dynamic and interactive memory game inspired by the classic Simon Says using HTML, CSS, and JavaScript. The game challenges users to replicate an increasingly complex sequence of glowing color buttons, testing their memory and focus.",
       tech: ["HTML", "CSS", "Javascript"],
       img: img2,
+      href: 'https://github.com/Abdul2Harris/Simon-Game'
     },
     {
       title: "Django CRM",
       para: "Developed a robust Customer Relationship Management (CRM) web application using Python Django and MySQL, designed to streamline client data handling and user interactions.",
       tech: ["Python", "Django", "MySQL"],
       img: img3,
+      href: 'https://github.com/Abdul2Harris/DjangoCRM'
     },
   ];
 
@@ -49,6 +53,7 @@ export const Projects = () => {
               para={project.para}
               tech={project.tech}
               img={project.img}
+              href={project.href}
             />
           ))}
         </div>
