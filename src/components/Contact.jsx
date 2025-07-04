@@ -30,7 +30,7 @@ export const Contact = () => {
     setSending(true);
 
     try {
-      await axios.post("http://localhost:5000/send", formData);
+      await axios.post("https://abdul-portfolio-server.onrender.com/send", formData);
       setSuccess(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
       notification.success({
