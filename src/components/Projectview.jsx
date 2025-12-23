@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
 
-export const ProjectCard = ({ title, para, tech, img, href }) => {
+export const ProjectCard = ({ title, para, tech, img, href, websiteLink }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: "-120px" });
 
@@ -29,10 +29,10 @@ export const ProjectCard = ({ title, para, tech, img, href }) => {
           ))}
 
           <div className="flex gap-4">
-            <a className="text-foreground/80 hover:text-primary cursor-pointer">
+            <a className="text-foreground/80 hover:text-primary cursor-pointer" href={websiteLink} target="_blank">
               <ExternalLink size={20} />
             </a>
-            <a className="text-foreground/80 hover:text-primary cursor-pointer" href={href}>
+            <a className="text-foreground/80 hover:text-primary cursor-pointer" href={href} target="_blank">
               <Github size={20} />
             </a>
           </div>
