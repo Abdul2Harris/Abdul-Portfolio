@@ -3,18 +3,18 @@ import { LockIcon, Tag, User } from "lucide-react";
 export const About = () => {
   const cardData = [
     {
-      title: "Web Development",
-      para: "Creating responsive websites and web applications with modern frameworks.",
+      title: "Full Stack Application Development",
+      para: "Specialize in developing production grade full-stack applications with a focus on performance and maintainability.",
       icon: <Tag />,
     },
     {
-      title: "Competitive Programming",
-      para: "I specialize in solving complex algorithmic problems, Solved more than 300 problems on Geeksforgeeks.",
+      title: "AI Automation",
+      para: "Specialize in developing AI-powered automation systems, agent-based workflows, and semantic search pipelines.",
       icon: <User />,
     },
     {
-      title: "Software Development",
-      para: "Building robust and scalable applications from concept to deployment, focusing on efficient and maintainable code.",
+      title: "Problem Solving",
+      para: "Have a proven track record of solving complex problems and finding innovative solutions to complex problems.",
       icon: <LockIcon />,
     },
   ];
@@ -31,20 +31,26 @@ export const About = () => {
         <div className="md:flex items-center gap-2 justify-center pt-10">
           <div className="space-y-6 md:w-1/2">
             <h3 className="text-foreground font-medium text-2xl">
-              {" "}
-              Passionate Full Stack Developer
+              Full Stack Developer building real-world & AI-powered products
             </h3>
+
             <p className="text-muted-foreground">
-              I specialize in creating responsive, accessible, and performant
-              web applications using modern technologies such as Node.js,
-              Django, Python, JavaScript, and React.js.
+              I build scalable, production-grade web applications using modern
+              technologies like React, Node.js, and Python. I’ve worked on
+              real-world systems where performance, clean architecture, and
+              reliability matter.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              Recently, I’ve been focused on AI-driven automation — building a
+              job tracking and application system that leverages workflows,
+              embeddings, and intelligent pipelines to simplify job searching.
+            </p>
+
+            <p className="text-muted-foreground">
+              I enjoy turning complex problems into simple, usable products and
+              continuously improving my skills by working on systems that have
+              practical impact.
             </p>
 
             <div className="pt-2">

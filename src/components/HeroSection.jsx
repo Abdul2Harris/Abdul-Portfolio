@@ -19,10 +19,10 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg lg:text-xl text-muted-foreground mx-auto opacity-0 animate-fade-in-delay-3">
-            A dedicated and quick-learning full-stack developer, I thrive on
-            transforming ideas into impactful web experiences. With a keen eye
-            for detail and a knack for problem-solving, I build both functional
-            and aesthetically pleasing applications.
+            Software Engineer building AI-powered automation systems, agent-based workflows, 
+            semantic search pipelines, and API integrations. 1+ year shipping production 
+            backend features at NxtSpire; independently built JobPilot AI, an end-to-end job automation 
+            platform.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

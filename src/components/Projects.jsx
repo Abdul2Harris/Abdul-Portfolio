@@ -2,12 +2,22 @@ import img1 from "./images/portfolio.png";
 import img2 from "./images/simon.webp";
 import img3 from "./images/DCRM.png"
 import img4 from "./images/tinyUrl.png"
+import img5 from "./images/jobPilotDashboard.png"
 
 import { ProjectCard } from "./Projectview";
 import { href } from "react-router-dom";
 
 export const Projects = () => {
   const projectCardData = [
+    {
+      title: "JobPilot AI — AI Powered Job Search Platform",
+      para: "Scrapes jobs from Naukri & Internshala, parses your resume with AI, and ranks the best-matching roles using vector embeddings, all in one automated pipeline.",
+      tech: ["Next.js", "Node.js", "n8n workflows", "supabse"],
+      img: img5,
+      href: 'https://github.com/Abdul2Harris/jobpilot-ai',
+      websiteLink: 'https://github.com/Abdul2Harris/jobpilot-ai'
+
+    },
     {
       title: "TinyLink — A Modern URL Shortener",
       para: "TinyLink is a clean, fast URL shortener that converts long links into short, shareable URLs in seconds. It supports custom short codes, built-in analytics for tracking link performance, and a fully responsive interface with a smooth, modern user experience.",
@@ -25,22 +35,22 @@ export const Projects = () => {
       href: 'https://github.com/Abdul2Harris/Abdul-Portfolio',
       websiteLink: 'https://abdul-portfolio-self.vercel.app/'
     },
-    {
-      title: "The Simon Game",
-      para: "Crafted a dynamic and interactive memory game inspired by the classic Simon Says using HTML, CSS, and JavaScript. The game challenges users to replicate an increasingly complex sequence of glowing color buttons, testing their memory and focus.",
-      tech: ["HTML", "CSS", "Javascript"],
-      img: img2,
-      href: 'https://github.com/Abdul2Harris/Simon-Game',
-      websiteLink: 'https://abdul2harris.github.io/Simon-Game/'
-    },
-    {
-      title: "Django CRM",
-      para: "Developed a robust Customer Relationship Management (CRM) web application using Python Django and MySQL, designed to streamline client data handling and user interactions.",
-      tech: ["Python", "Django", "MySQL"],
-      img: img3,
-      href: 'https://github.com/Abdul2Harris/DjangoCRM',
-      websiteLink:  ''
-    },
+    // {
+    //   title: "The Simon Game",
+    //   para: "Crafted a dynamic and interactive memory game inspired by the classic Simon Says using HTML, CSS, and JavaScript. The game challenges users to replicate an increasingly complex sequence of glowing color buttons, testing their memory and focus.",
+    //   tech: ["HTML", "CSS", "Javascript"],
+    //   img: img2,
+    //   href: 'https://github.com/Abdul2Harris/Simon-Game',
+    //   websiteLink: 'https://abdul2harris.github.io/Simon-Game/'
+    // },
+    // {
+    //   title: "Django CRM",
+    //   para: "Developed a robust Customer Relationship Management (CRM) web application using Python Django and MySQL, designed to streamline client data handling and user interactions.",
+    //   tech: ["Python", "Django", "MySQL"],
+    //   img: img3,
+    //   href: 'https://github.com/Abdul2Harris/DjangoCRM',
+    //   websiteLink:  ''
+    // },
   ];
 
   return (
